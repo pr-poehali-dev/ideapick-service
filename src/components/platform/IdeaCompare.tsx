@@ -97,7 +97,7 @@ export default function IdeaCompare({ ideas }: Props) {
       {compareIdeas.length < 2 ? (
         <div className="text-center py-20 text-muted-foreground">
           <Icon name="GitCompare" size={40} className="mx-auto mb-4 opacity-30" />
-          <p className="font-syne text-2xl font-light mb-2">Выберите хотя бы 2 идеи</p>
+          <p className="font-golos text-2xl font-light mb-2">Выберите хотя бы 2 идеи</p>
           <p className="text-sm font-golos">Убедитесь, что идеи прошли анализ</p>
         </div>
       ) : (
@@ -126,10 +126,10 @@ export default function IdeaCompare({ ideas }: Props) {
                     </div>
                   )}
                   <div className="w-3 h-3 rounded-full mx-auto mb-3" style={{ background: color }} />
-                  <h3 className="font-syne text-lg font-semibold text-foreground mb-1">{idea.title}</h3>
+                  <h3 className="font-golos text-lg font-semibold text-foreground mb-1">{idea.title}</h3>
                   <span className="text-[10px] text-muted-foreground font-golos">{idea.category}</span>
                   <div
-                    className="text-4xl font-bold font-syne mt-3"
+                    className="text-4xl font-bold font-golos mt-3"
                     style={{ color }}
                   >
                     {idea.score}

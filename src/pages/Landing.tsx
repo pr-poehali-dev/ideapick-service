@@ -78,7 +78,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-gold-DEFAULT to-gold-dark flex items-center justify-center">
             <span className="text-sm font-bold text-[#0f1117]">I</span>
           </div>
-          <span className="font-syne text-xl font-semibold text-foreground">Ideapick</span>
+          <span className="font-golos text-xl font-semibold text-foreground">Ideapick</span>
         </div>
         <div className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#features" className="hover:text-foreground transition-colors">Возможности</a>
@@ -103,7 +103,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
         </div>
 
         <h1
-          className="font-syne text-6xl md:text-8xl font-light leading-[0.95] mb-8"
+          className="font-golos text-6xl md:text-8xl font-light leading-[0.95] mb-8"
           style={{
             opacity: visible ? 1 : 0,
             transform: visible ? 'translateY(0)' : 'translateY(30px)',
@@ -181,7 +181,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
                       <Icon name={s.icon} size={14} className={s.col === 'gold' ? 'text-gold-DEFAULT' : s.col === 'purple' ? 'text-purple-DEFAULT' : 'text-green-400'} />
                       <span className="text-xs text-muted-foreground">{s.label}</span>
                     </div>
-                    <div className={`font-syne text-3xl font-semibold ${s.col === 'gold' ? 'text-gold-light' : s.col === 'purple' ? 'text-purple-light' : 'text-green-400'}`}>{s.val}</div>
+                    <div className={`font-golos text-3xl font-semibold ${s.col === 'gold' ? 'text-gold-light' : s.col === 'purple' ? 'text-purple-light' : 'text-green-400'}`}>{s.val}</div>
                   </div>
                 ))}
               </div>
@@ -231,7 +231,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
             { val: '2 мин', label: 'Базовый анализ' },
           ].map((s, i) => (
             <div key={i}>
-              <div className="font-syne text-4xl font-semibold gradient-text mb-1">{s.val}</div>
+              <div className="font-golos text-4xl font-semibold gradient-text mb-1">{s.val}</div>
               <div className="text-sm text-muted-foreground font-golos">{s.label}</div>
             </div>
           ))}
@@ -242,7 +242,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
       <section id="features" className="relative z-10 max-w-7xl mx-auto px-6 py-28">
         <div className="text-center mb-16">
           <div className="tag-pill inline-flex items-center gap-2 mb-6">✦ Возможности</div>
-          <h2 className="font-syne text-5xl md:text-6xl font-light mb-4">
+          <h2 className="font-golos text-5xl md:text-6xl font-light mb-4">
             Всё что нужно для <span className="gradient-text">умного решения</span>
           </h2>
           <p className="text-muted-foreground font-golos max-w-xl mx-auto">
@@ -255,7 +255,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
               <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-4 ${f.color === 'gold' ? 'bg-[var(--gold-dim)]' : 'bg-[var(--purple-dim)]'}`}>
                 <Icon name={f.icon} size={18} className={f.color === 'gold' ? 'text-gold-DEFAULT' : 'text-purple-DEFAULT'} />
               </div>
-              <h3 className="font-syne text-xl font-semibold mb-2 text-foreground">{f.title}</h3>
+              <h3 className="font-golos text-xl font-semibold mb-2 text-foreground">{f.title}</h3>
               <p className="text-sm text-muted-foreground font-golos leading-relaxed">{f.desc}</p>
             </div>
           ))}
@@ -268,16 +268,16 @@ export default function Landing({ onEnterApp }: LandingProps) {
         <div className="max-w-7xl mx-auto px-6 relative">
           <div className="text-center mb-16">
             <div className="tag-pill inline-flex items-center gap-2 mb-6">✦ Процесс</div>
-            <h2 className="font-syne text-5xl md:text-6xl font-light">Как это работает</h2>
+            <h2 className="font-golos text-5xl md:text-6xl font-light">Как это работает</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
             <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-px bg-gradient-to-r from-transparent via-border to-transparent" />
             {steps.map((s, i) => (
               <div key={i} className="text-center relative">
                 <div className="w-16 h-16 rounded-2xl glow-border flex items-center justify-center mx-auto mb-5 bg-card">
-                  <span className="font-syne text-2xl font-semibold gradient-text">{s.num}</span>
+                  <span className="font-golos text-2xl font-semibold gradient-text">{s.num}</span>
                 </div>
-                <h3 className="font-syne text-xl font-semibold mb-2 text-foreground">{s.title}</h3>
+                <h3 className="font-golos text-xl font-semibold mb-2 text-foreground">{s.title}</h3>
                 <p className="text-sm text-muted-foreground font-golos leading-relaxed">{s.desc}</p>
               </div>
             ))}
@@ -289,7 +289,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
       <section id="reviews" className="relative z-10 max-w-7xl mx-auto px-6 py-28">
         <div className="text-center mb-16">
           <div className="tag-pill inline-flex items-center gap-2 mb-6">✦ Отзывы</div>
-          <h2 className="font-syne text-5xl md:text-6xl font-light">
+          <h2 className="font-golos text-5xl md:text-6xl font-light">
             Что говорят <span className="gradient-text">пользователи</span>
           </h2>
         </div>
@@ -322,7 +322,7 @@ export default function Landing({ onEnterApp }: LandingProps) {
           <div className="orb orb-gold w-[400px] h-[300px] top-[-100px] left-1/2 -translate-x-1/2 opacity-40" />
           <div className="relative">
             <div className="tag-pill inline-flex items-center gap-2 mb-6">✦ Начните сейчас</div>
-            <h2 className="font-syne text-5xl md:text-7xl font-light mb-6">
+            <h2 className="font-golos text-5xl md:text-7xl font-light mb-6">
               Ваша следующая большая идея<br />
               <span className="gradient-text-animated">ждёт решения</span>
             </h2>

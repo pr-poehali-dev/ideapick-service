@@ -19,7 +19,6 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				'syne': ['Syne', 'sans-serif'],
 				'golos': ['Golos Text', 'sans-serif'],
 			},
 			colors: {
