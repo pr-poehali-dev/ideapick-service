@@ -84,7 +84,7 @@ export default function IdeaGenerator({ onAdd }: Props) {
   return (
     <div className="max-w-2xl mx-auto">
       <div className="mb-8">
-        <h2 className="font-cormorant text-3xl font-light text-foreground mb-2">Новая идея</h2>
+        <h2 className="font-syne text-3xl font-light text-foreground mb-2">Новая идея</h2>
         <p className="text-sm text-muted-foreground font-golos">Опишите вашу идею — система оценит её потенциал</p>
       </div>
 
@@ -197,12 +197,12 @@ export default function IdeaGenerator({ onAdd }: Props) {
             <div className="flex items-start justify-between mb-5">
               <div>
                 <span className="tag-pill mb-3 inline-block">{category}</span>
-                <h3 className="font-cormorant text-2xl font-semibold text-foreground">{title}</h3>
+                <h3 className="font-syne text-2xl font-semibold text-foreground">{title}</h3>
                 <p className="text-sm text-muted-foreground font-golos mt-1.5 leading-relaxed">{description}</p>
               </div>
               <div className="ml-4 text-center">
                 <div
-                  className="w-16 h-16 rounded-2xl flex items-center justify-center font-cormorant text-2xl font-bold"
+                  className="w-16 h-16 rounded-2xl flex items-center justify-center font-syne text-2xl font-bold"
                   style={{
                     background: score > 75 ? 'rgba(74, 222, 128, 0.1)' : score > 50 ? 'rgba(212, 168, 67, 0.1)' : 'rgba(248, 113, 113, 0.1)',
                     border: `1px solid ${score > 75 ? 'rgba(74,222,128,0.3)' : score > 50 ? 'rgba(212,168,67,0.3)' : 'rgba(248,113,113,0.3)'}`,

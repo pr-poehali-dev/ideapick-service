@@ -52,7 +52,7 @@ function MetricEditor({ metric, value, onChange }: { metric: typeof METRICS[0]; 
           className="flex-1 accent-gold-DEFAULT"
         />
         <div
-          className="w-10 h-10 rounded-xl flex items-center justify-center font-cormorant text-lg font-bold shrink-0"
+          className="w-10 h-10 rounded-xl flex items-center justify-center font-syne text-lg font-bold shrink-0"
           style={{
             background: metric.color === 'gold' ? 'var(--gold-dim)' : 'var(--purple-dim)',
             color: metric.color === 'gold' ? '#F0C96A' : '#C4A0F0',
@@ -136,13 +136,13 @@ export default function IdeaAnalysis({ ideas, selectedIdea, onSelectIdea, onUpda
       {!selectedIdea ? (
         <div className="text-center py-20 text-muted-foreground">
           <Icon name="BarChart3" size={40} className="mx-auto mb-4 opacity-30" />
-          <p className="font-cormorant text-2xl font-light mb-2">Выберите идею</p>
+          <p className="font-syne text-2xl font-light mb-2">Выберите идею</p>
           <p className="text-sm font-golos">Выберите идею выше для просмотра анализа</p>
         </div>
       ) : editing ? (
         <div className="space-y-4 animate-scale-in">
           <div className="flex items-center justify-between">
-            <h3 className="font-cormorant text-xl font-semibold text-foreground">Редактирование анализа: {selectedIdea.title}</h3>
+            <h3 className="font-syne text-xl font-semibold text-foreground">Редактирование анализа: {selectedIdea.title}</h3>
             <div className="flex gap-2">
               <button onClick={() => setEditing(false)} className="px-4 py-2 rounded-xl text-sm border border-border text-muted-foreground hover:text-foreground transition-all font-golos">Отмена</button>
               <button onClick={saveEdit} className="btn-gold px-4 py-2 rounded-xl text-sm flex items-center gap-2">
@@ -171,12 +171,12 @@ export default function IdeaAnalysis({ ideas, selectedIdea, onSelectIdea, onUpda
                   {selectedIdea.category}
                 </span>
               </div>
-              <h3 className="font-cormorant text-xl font-semibold text-foreground mb-4">{selectedIdea.title}</h3>
+              <h3 className="font-syne text-xl font-semibold text-foreground mb-4">{selectedIdea.title}</h3>
 
               {analysis ? (
                 <>
                   <div
-                    className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center font-cormorant text-4xl font-bold"
+                    className="w-24 h-24 rounded-full mx-auto mb-4 flex items-center justify-center font-syne text-4xl font-bold"
                     style={{
                       background: avgScore > 75 ? 'rgba(74,222,128,0.1)' : avgScore > 50 ? 'rgba(212,168,67,0.1)' : 'rgba(248,113,113,0.1)',
                       border: `2px solid ${avgScore > 75 ? 'rgba(74,222,128,0.4)' : avgScore > 50 ? 'rgba(212,168,67,0.4)' : 'rgba(248,113,113,0.4)'}`,
@@ -273,7 +273,7 @@ export default function IdeaAnalysis({ ideas, selectedIdea, onSelectIdea, onUpda
                         >
                           <Icon name={m.icon} size={16} style={{ color: col }} />
                         </div>
-                        <div className="font-cormorant text-2xl font-semibold mb-0.5" style={{ color: col }}>{val}</div>
+                        <div className="font-syne text-2xl font-semibold mb-0.5" style={{ color: col }}>{val}</div>
                         <div className="text-xs text-muted-foreground font-golos">{m.label}</div>
                         <div className="text-[10px] text-muted-foreground mt-1 font-golos">
                           {val >= 65 ? '✓ Сильно' : val >= 45 ? '~ Средне' : '✗ Слабо'}
@@ -286,7 +286,7 @@ export default function IdeaAnalysis({ ideas, selectedIdea, onSelectIdea, onUpda
             ) : (
               <div className="glass-card rounded-2xl p-8 text-center">
                 <Icon name="BarChart3" size={48} className="mx-auto mb-4 text-muted-foreground opacity-30" />
-                <p className="font-cormorant text-2xl font-light mb-2">Анализ не проведён</p>
+                <p className="font-syne text-2xl font-light mb-2">Анализ не проведён</p>
                 <p className="text-sm text-muted-foreground font-golos mb-6">Нажмите "Начать анализ" чтобы оценить идею по 6 ключевым метрикам</p>
                 <button onClick={startEdit} className="btn-gold px-6 py-3 rounded-xl text-sm inline-flex items-center gap-2">
                   <Icon name="BarChart3" size={14} /> Начать анализ

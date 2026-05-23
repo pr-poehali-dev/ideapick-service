@@ -120,7 +120,7 @@ export default function IdeaDecision({ ideas, selectedIdea, onSelectIdea, onUpda
       {!selectedIdea ? (
         <div className="text-center py-20 text-muted-foreground">
           <Icon name="Target" size={40} className="mx-auto mb-4 opacity-30" />
-          <p className="font-cormorant text-2xl font-light mb-2">Выберите идею</p>
+          <p className="font-syne text-2xl font-light mb-2">Выберите идею</p>
           <p className="text-sm font-golos">Пройдите 5-шаговый фреймворк принятия решений</p>
         </div>
       ) : (
@@ -128,7 +128,7 @@ export default function IdeaDecision({ ideas, selectedIdea, onSelectIdea, onUpda
           {/* Questions */}
           <div className="lg:col-span-2 space-y-3">
             <div className="flex items-center justify-between mb-1">
-              <h3 className="font-cormorant text-xl font-semibold text-foreground">Фреймворк решения</h3>
+              <h3 className="font-syne text-xl font-semibold text-foreground">Фреймворк решения</h3>
               <span className="text-xs text-muted-foreground font-golos">{answeredCount}/{QUESTIONS.length} ответов</span>
             </div>
 
@@ -154,7 +154,7 @@ export default function IdeaDecision({ ideas, selectedIdea, onSelectIdea, onUpda
                 >
                   <div className="flex items-start gap-3 mb-4">
                     <div
-                      className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 font-cormorant text-sm font-bold"
+                      className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 font-syne text-sm font-bold"
                       style={{
                         background: ans !== undefined ? (ans ? 'rgba(74,222,128,0.15)' : 'rgba(248,113,113,0.15)') : 'var(--gold-dim)',
                         color: ans !== undefined ? (ans ? '#4ADE80' : '#F87171') : '#D4A843',
@@ -210,7 +210,7 @@ export default function IdeaDecision({ ideas, selectedIdea, onSelectIdea, onUpda
                 <>
                   <div className="text-center mb-4">
                     <Icon name={decision.icon} size={36} className="mx-auto mb-3" style={{ color: decision.color }} />
-                    <div className="font-cormorant text-3xl font-bold mb-1" style={{ color: decision.color }}>
+                    <div className="font-syne text-3xl font-bold mb-1" style={{ color: decision.color }}>
                       {decision.label}
                     </div>
                     <div className="text-xs text-muted-foreground font-golos">{yesCount} из 5 критериев</div>
@@ -220,7 +220,7 @@ export default function IdeaDecision({ ideas, selectedIdea, onSelectIdea, onUpda
               ) : (
                 <div className="text-center py-4">
                   <Icon name="Target" size={32} className="mx-auto mb-3 text-muted-foreground opacity-40" />
-                  <p className="font-cormorant text-xl font-light text-foreground mb-1">Ваш вердикт</p>
+                  <p className="font-syne text-xl font-light text-foreground mb-1">Ваш вердикт</p>
                   <p className="text-xs text-muted-foreground font-golos">Ответьте на все 5 вопросов</p>
                 </div>
               )}

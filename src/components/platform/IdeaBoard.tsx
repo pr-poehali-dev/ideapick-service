@@ -141,7 +141,7 @@ export default function IdeaBoard({ ideas, selectedIdeaId, onSelect, onDelete, o
       {filtered.length === 0 ? (
         <div className="text-center py-20 text-muted-foreground">
           <Icon name="Lightbulb" size={40} className="mx-auto mb-4 opacity-30" />
-          <p className="font-cormorant text-2xl font-light mb-2">Идей не найдено</p>
+          <p className="font-syne text-2xl font-light mb-2">Идей не найдено</p>
           <p className="text-sm">Попробуйте изменить фильтр или добавьте новую идею</p>
         </div>
       ) : view === 'grid' ? (
@@ -234,7 +234,7 @@ function IdeaCard({ idea, selected, onSelect, onDelete, onAnalyze, onDecide, onC
         </div>
       </div>
 
-      <h3 className="font-cormorant text-lg font-semibold text-foreground mb-1.5 leading-tight">{idea.title}</h3>
+      <h3 className="font-syne text-lg font-semibold text-foreground mb-1.5 leading-tight">{idea.title}</h3>
       <p className="text-xs text-muted-foreground font-golos leading-relaxed mb-4 line-clamp-2">{idea.description}</p>
 
       <div className="mb-3">

@@ -147,7 +147,7 @@ export default function Platform({ onBack }: PlatformProps) {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-gold-DEFAULT to-gold-dark flex items-center justify-center">
               <span className="text-sm font-bold text-[#0f1117]">I</span>
             </div>
-            <span className="font-cormorant text-xl font-semibold">Ideapick</span>
+            <span className="font-syne text-xl font-semibold">Ideapick</span>
           </div>
           <button
             onClick={() => setSidebarOpen(false)}
@@ -166,7 +166,7 @@ export default function Platform({ onBack }: PlatformProps) {
               { val: approvedCount, label: 'Одобрено' },
             ].map((s, i) => (
               <div key={i} className="text-center py-2 rounded-xl bg-secondary">
-                <div className="font-cormorant text-lg font-semibold text-gold-light">{s.val}</div>
+                <div className="font-syne text-lg font-semibold text-gold-light">{s.val}</div>
                 <div className="text-[10px] text-muted-foreground">{s.label}</div>
               </div>
             ))}
@@ -219,7 +219,7 @@ export default function Platform({ onBack }: PlatformProps) {
               <Icon name="Menu" size={20} />
             </button>
             <div>
-              <h1 className="font-cormorant text-xl font-semibold leading-tight">
+              <h1 className="font-syne text-xl font-semibold leading-tight">
                 {navItems.find(n => n.id === activeTab)?.label}
               </h1>
               <p className="text-xs text-muted-foreground hidden sm:block">
